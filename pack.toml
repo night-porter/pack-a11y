@@ -1,0 +1,13 @@
+name = "a11y"
+description = "WCAG 2.2 AA accessibility review for web front-ends"
+version = "0.1.0"
+
+[[steps]]
+name = "standards"
+hook = "pre_fix"
+prompt = "steps/standards.md"
+
+[[steps]]
+name = "review"
+hook = "pre_push"
+prompt = "steps/review.md"
